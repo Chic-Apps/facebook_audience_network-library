@@ -79,9 +79,12 @@ class FacebookNativeAdView implements PlatformView, NativeAdListener {
     private NativeAdViewAttributes getViewAttributes(Context context, HashMap args) {
         NativeAdViewAttributes viewAttributes = new NativeAdViewAttributes(context);
 
+//        viewAttributes.
+//                    setBackgroundColor(Color.parseColor((String) args.get("bg_color")));
+
         if (args.get("bg_color") != null)
             viewAttributes.
-                    setBackgroundColor(Color.parseColor((String) args.get("bg_color")));
+                    setBackgroundColor(Color.parseColor("#80000000"));
         if (args.get("title_color") != null)
             viewAttributes.
                     setTitleTextColor(Color.parseColor((String) args.get("title_color")));
